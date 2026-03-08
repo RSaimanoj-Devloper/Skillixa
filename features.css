@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.tools-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background-color: #e5e7eb;
+}
+
+.icon.blue {
+  background-color: #e0f2fe;
+  color: #3b82f6;
+}
+
+.icon.green {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+.icon.purple {
+  background-color: #ede9fe;
+  color: #8b5cf6;
+}
+
+.icon.orange {
+  background-color: #fef3c7;
+  color: #f59e0b;
+}
+
+.icon.red {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.icon.violet {
+  background-color: #e0e7ff;
+  color: #6366f1;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+a.card {
+  text-decoration: none;
+  color: inherit;
+}

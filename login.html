@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Skillixa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="modeToggle" />
+      <span class="slider"></span>
+    </label>
+    <span class="mode-label">Dark Mode</span>
+  </div>
+
+  <div class="login-container">
+    <div class="logo-bg">S</div>
+    <h2>Login to Skillixa</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********" required minlength="6" />
+      </div>
+
+      <button type="submit" class="login-btn">Sign In</button>
+    </form>
+
+    <p class="footer-text">
+      Don't have an account?
+      <a href="register.html">Sign up</a>
+    </p>
+     
+  </div>
+
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    toggle.addEventListener('change', () => {
+      document.documentElement.setAttribute('data-theme', toggle.checked ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
